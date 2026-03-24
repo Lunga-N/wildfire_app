@@ -1,0 +1,128 @@
+/* === WILDFIRE_APP/style/style.css === */
+
+/* Modern Typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+html,
+body,
+[class*="css"] {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    /* Increased from default for better readability */
+    color: #ffffff;
+}
+
+/* Glassmorphism Containers - Improved contrast and padding */
+[data-testid="stForm"],
+.stMetric,
+.stTabs,
+div.stExpander {
+    background: rgba(0, 0, 0, 0.4) !important;
+    /* Darker background for better text contrast */
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    margin-bottom: 2rem;
+}
+
+/* Metrics Styling */
+[data-testid="stMetricValue"] {
+    font-weight: 800;
+    font-size: 2.5rem !important;
+    color: #ff4b4b;
+}
+
+[data-testid="stMetricLabel"] {
+    font-size: 1.2rem !important;
+    color: #e0e0e0 !important;
+}
+
+/* Form Styling */
+[data-testid="stForm"] {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+
+label {
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+    color: #ffffff !important;
+}
+
+/* Premium Buttons */
+.stButton>button {
+    background-color: #ff4b4b;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    padding: 0.8rem 2.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.stButton>button:hover {
+    background-color: #ff3333;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 75, 75, 0.5);
+}
+
+/* Sidebar Styling */
+[data-testid="stSidebar"] {
+    background-color: rgba(15, 15, 20, 0.98);
+}
+
+/* Headers */
+h1,
+h2,
+h3 {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Tab labels - Modern Pill Style */
+button[data-baseweb="tab"] {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    color: #e0e0e0 !important;
+    border-radius: 10px 10px 0 0 !important;
+    transition: all 0.3s ease !important;
+    padding: 10px 20px !important;
+}
+
+button[data-baseweb="tab"]:hover {
+    color: #ff4b4b !important;
+    background: rgba(255, 75, 75, 0.1) !important;
+}
+
+button[aria-selected="true"] {
+    color: #ff4b4b !important;
+    border-bottom: 3px solid #ff4b4b !important;
+    background: rgba(255, 75, 75, 0.05) !important;
+}
+
+/* Sidebar Specifics */
+[data-testid="stSidebar"] section {
+    padding-top: 2rem;
+}
+
+/* Custom Scrollbar for better aesthetic */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff4b4b;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff3333;
+}
