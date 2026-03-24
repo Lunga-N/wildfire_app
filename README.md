@@ -41,4 +41,4 @@ The **eSwatini Wildfire Predictor** is a data-driven intelligence platform desig
 - **Email**: ndzimandzelunga@gmail.com
 
 ---
-*Lunga Ndzimandze © 2025*
+*Lunga Ndzimandze © 2026*
